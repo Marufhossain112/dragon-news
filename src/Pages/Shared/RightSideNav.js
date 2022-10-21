@@ -1,5 +1,6 @@
 import React from "react";
 import ButtonGroups from "../../components/ButtonGroup/ButtonGroups";
+import Carousela from "../../components/Carousel/Carousela";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
 
 const RightSideNav = () => {
@@ -8,6 +9,7 @@ const RightSideNav = () => {
       <ButtonGroups></ButtonGroups>
       <p className="mt-4">Find us on :</p>
       <SocialLinks></SocialLinks>
+      <Carousela></Carousela>
     </div>
   );
 };
