@@ -1,9 +1,12 @@
 import React from "react";
+import ButtonGroups from "../../components/ButtonGroup/ButtonGroups";
 
 const RightSideNav = () => {
   return (
     <div>
-      <h2>This is Right side.</h2>
+      <ButtonGroups></ButtonGroups>
+      <h4>Find us on</h4>
+      
     </div>
   );
 };
