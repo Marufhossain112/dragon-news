@@ -2,7 +2,7 @@ import React from "react";
 import { Image } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { FaRegBookmark, FaShareAlt } from "react-icons/fa";
+import { FaEye, FaRegBookmark, FaShareAlt, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SummeryCard = ({ news }) => {
@@ -10,7 +10,7 @@ const SummeryCard = ({ news }) => {
   const { _id, total_view, title, number, rating, details, author, image_url } =
     news;
   return (
-    <Card>
+    <Card className="mb-3">
       <Card.Header className="d-flex justify-content-between align-items-center">
         <div className="d-flex ">
           <Image
@@ -51,7 +51,20 @@ const SummeryCard = ({ news }) => {
           )}
         </Card.Text>
       </Card.Body>
-      <Card.Footer className="text-muted">2 days ago</Card.Footer>
+      <Card.Footer className="d-flex justify-content-between ">
+        <div className="align-items-center">
+          <span className="text-warning">
+            <FaStar></FaStar>
+          </span>
+          <span className="ms-1">{rating.number}</span>
+        </div>
+        <div>
+          <span className="me-1">
+            <FaEye></FaEye>
+          </span>
+          <span>{total_view}</span>
+        </div>
+      </Card.Footer>
     </Card>
   );
 };
