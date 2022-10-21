@@ -9,24 +9,22 @@ import LeftSideNav from "./LeftSideNav/LeftSideNav";
 const Header = () => {
   return (
     <div>
-      <Navbar bg="light" expand="lg">
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-          <Navbar.Brand>
-            {" "}
-            <Link to="/">Dragon News 24 </Link>{" "}
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="home">Home</Nav.Link>
-              <Nav.Link href="categories">Categories</Nav.Link>
-              <Nav.Link href="news">News</Nav.Link>
+              <Nav.Link href="#features">Home</Nav.Link>
+              <Nav.Link href="#pricing">Categories</Nav.Link>
+              <Nav.Link href="#pricing">News</Nav.Link>
             </Nav>
-            {
-              <div className="d-lg-none">
-                <LeftSideNav></LeftSideNav>
-              </div>
-            }
+            <Nav>
+              <Nav.Link href="#deets">More deets</Nav.Link>
+              <Nav.Link eventKey={2} href="#memes">
+                Dank memes
+              </Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
