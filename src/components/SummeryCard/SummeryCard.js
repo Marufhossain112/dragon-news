@@ -8,7 +8,7 @@ const SummeryCard = ({ news }) => {
   const { _id, total_view, title, number, rating, details, author, image_url } =
     news;
   return (
-    <Card className="text-center">
+    <Card >
       <Card.Header></Card.Header>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
