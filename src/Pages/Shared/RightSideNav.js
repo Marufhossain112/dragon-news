@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import ButtonGroups from "../../components/ButtonGroup/ButtonGroups";
 import Carousela from "../../components/Carousel/Carousela";
 import SocialLinks from "../../components/SocialLinks/SocialLinks";
+import { AuthContext } from "../../contexts/UserContext";
 
 const RightSideNav = () => {
   return (
