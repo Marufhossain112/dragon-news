@@ -23,9 +23,7 @@ const Header = () => {
             </Nav>
             <Nav>
               <Nav.Link href="#deets">{user?.displayName}</Nav.Link>
-              <Nav.Link eventKey={2} href="#memes">
-                Dank memes
-              </Nav.Link>
+              <Nav.Link eventKey={2} href="#memes"></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -33,5 +31,6 @@ const Header = () => {
     </div>
   );
 };
+
 
 export default Header;
