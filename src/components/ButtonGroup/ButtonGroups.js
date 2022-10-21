@@ -14,7 +14,7 @@ const ButtonGroups = () => {
         console.log(user);
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       });
   };
   return (
